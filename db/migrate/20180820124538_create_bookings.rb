@@ -4,8 +4,8 @@ class CreateBookings < ActiveRecord::Migration[5.2]
       t.string :status
       t.date :starts_at
       t.date :ends_at
-      t.references :user_id
-      t.references :car_id
+      t.references :user
+      t.references :car
 
       t.timestamps
     end
