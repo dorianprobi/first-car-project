@@ -1,10 +1,11 @@
-<div class= "home">
-  <h1>Welcome to snowden's</h1>
-  <h1>car rental</h1>
-<%= link_to 'list all cars', cars_path, class: "btn btn-primary"%>
-<%= link_to 'create a car', new_car_path, class: "btn btn-primary"%>
-
-
-
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://i.pinimg.com/originals/91/0c/3c/910c3c1ff4f30e92be6188fda6f35051.jpg');">
+  <div class="banner-content">
+    <h1>Welcome to snowden's <br> car rental</h1>
+    <p>established 1830</p>
+      <div class= "home">
+        <%= link_to 'show cars', cars_path, class: "btn btn-primary"%>
+        <%= link_to 'rent a car', new_car_path, class: "btn btn-primary"%>
+      </div>
+  </div>
 </div>
 
