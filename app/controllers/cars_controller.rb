@@ -13,8 +13,7 @@ class CarsController < ApplicationController
     if @car.save
       redirect_to car_path(@car)
     else
-      raise
-      flash[:alert] = @car.errors.full_messages
+      flash.now[:alert] = @car.errors.full_messages
       render 'new'
     end
   end
@@ -37,7 +36,7 @@ class CarsController < ApplicationController
   def destroy
     @car = Car.find(params[:id])
     @car.destroy
-    redirect_to car_path(@car)
+    redirect_to cars_path
   end
 
   private

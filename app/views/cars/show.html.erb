@@ -7,6 +7,7 @@
  <div>
    <h1> <%= @car.price %> € </h1>
  </div>
+   <%= link_to 'all cars', cars_path, class: "btn btn-primary"%>
    <%= link_to 'update a car', edit_car_path(@car), class: "btn btn-primary"%>
    <%= link_to '<i class="far fa-trash-alt"></i>'.html_safe, car_path(@car), method: 'delete'%></li>
 </div>
