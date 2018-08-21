@@ -26,7 +26,7 @@ class CarsController < ApplicationController
 
   def update
     @car = Car.find(params[:id])
-    @car.update(user_params)
+    @car.update(car_params)
 
     redirect_to car_path(@car)
   end
