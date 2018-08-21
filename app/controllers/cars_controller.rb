@@ -21,15 +21,14 @@ class CarsController < ApplicationController
   end
 
   def edit
-
+    @car = Car.find(params[:id])
   end
 
   def update
+    @car = Car.find(params[:id])
+    @car.update(user_params)
 
-  end
-
-  def destroy
-
+    redirect_to car_path(@car)
   end
 
 private
