@@ -1,2 +1,9 @@
-<h1>Pages#home</h1>
-<p>index --- <%= link_to "click", cars_path %></p>
+<div class= "home">
+  <h1>Welcome to snowden's</h1>
+  <h1>car rental</h1>
+<%= link_to 'list all cars', cars_path, class: "btn btn-primary"%>
+<%= link_to 'create a car', new_car_path, class: "btn btn-primary"%>
+<%= link_to 'update a car', car_path(:id), class: "btn btn-primary"%>
+<%= link_to 'delete a car', cars_path(:id), class: "btn btn-primary"%>
+</div>
+
