@@ -1,2 +1,14 @@
-<h1>Cars#index</h1>
-<p>Find me in app/views/cars/index.html.erb</p>
+<div>
+  <div>
+    <h1> Your results </h1>
+  </div>
+  <div>
+    <h3> Click on the car you would like to check out </h3>
+  </div>
+  <div>
+    <% @cars.each do |car| %>
+      <h4> <%= link_to car.brand, car_path(car) %></h4>
+      <p> <%= car.price %> € </p>
+    <% end %>
+  </div>
+</div>
