@@ -8,10 +8,13 @@ class CarsController < ApplicationController
   end
 
   def create
-    @car = Car.create!(car_params)
+    @car = Car.new(car_params)
+    @car.user_as_owner = current_user
     if @car.save
       redirect_to car_path(@car)
     else
+      raise
+      flash[:alert] = @car.errors.full_messages
       render 'new'
     end
   end
