@@ -1,2 +1,7 @@
 <h1>Cars#edit</h1>
 <p>Find me in app/views/cars/edit.html.erb</p>
+<%= simple_form_for @car do |f| %>
+  <%= f.input :brand %>
+  <%= f.input :price %>
+  <%= f.submit "add a review", class: "btn btn-primary" %>
+<% end %>
