@@ -1,0 +1,56 @@
+.index-card {
+  height: 175px;
+  width: 80%;
+  background-position: center;
+  background-color: grey;
+  color: dimgrey;
+  position: relative;
+  margin: 35px 10%;
+}
+.index-card-car-photo {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  width: 115px;
+  border-radius: 50%;
+}
+.index-card-car-brand {
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.index-card-car-price {
+  position: absolute;
+  top: 20px;
+  right: 100px;
+}
+.index-card-car-insurance{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+}
+.index-card-car-refuel{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+
+}
+.index-card-price-header h2 {
+  font-size: 24px;
+}
+
+.index-card-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index: 2;
+  background: black;
+  opacity: 0;
+}
+.index-card-link:hover {
+  opacity: 0.1;
+}

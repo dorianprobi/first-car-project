@@ -38,3 +38,53 @@
   margin-bottom: 30px;
 }
 
+.search_form{
+  border: none;
+  color:white;
+
+}
+
+.ersten{
+  background-color:transparent;
+  border: 1px solid white;
+  border-radius:8px;
+  color:white;
+  padding-top: 5px;
+  padding-bottom:5px;
+  padding-right: 5px;
+  padding-left: 5px;
+  margin:5px;
+}
+
+
+.btn-treehouse {
+  color: white;
+  border: 2px solid white;
+  border-radius: 16px;
+  font-weight: bold;
+  background: transparent;
+  transition: background 0.3s ease;
+  margin: 10px;
+  padding-right: 60px;
+  padding-left: 60px;
+  padding-top: 5px;
+  padding-bottom:5px;
+
+}
+.btn-treehouse:hover {
+  opacity: 1;
+  background: whitesmoke;
+  text-decoration: none;
+  color: grey;
+}
+
+.form-control:focus {
+  border-color: #FF0000;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+}
+
+.search-form input[type="text"] {
+      -webkit-box-shadow: none;
+      outline: -webkit-focus-ring-color auto 0px;
+      border-color: white;
+}
