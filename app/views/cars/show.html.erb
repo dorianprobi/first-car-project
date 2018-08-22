@@ -1,14 +1,19 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
-         url('<%= cl_image_path @car.photo, height: 300, width: 400, crop: :fill %>')">
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://images.unsplash.com/photo-1523676060187-f55189a71f5e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ead3ae36f1c95df4cdb88434540e29ad&auto=format&fit=crop&w=1650&q=80');">
+ <div class="flexbox_show">
+   <div class="container">
+     <div class="row">
+      <div class="flexbox-text">
+        <h2> <strong><%= @car.brand %></strong></h2>
+
+        <p> <%= @car.price %> € </p>
+
+        <p> <%= @car.description %> </p>
+      </div>
+        <%= link_to 'all cars', cars_path, class: "btn btn-primary"%>
+        <%= link_to 'update', edit_car_path(@car), class: "btn btn-primary"%>
+        <%= link_to '<i class="far fa-trash-alt"></i>'.html_safe, car_path(@car), method: 'delete'%></li>
+     </div>
+   </div>
+ </div>
 </div>
-<div class="container">
- <div>
-   <h1> <%= @car.brand %> </h1>
- </div>
- <div>
-   <h1> <%= @car.price %> € </h1>
- </div>
-   <%= link_to 'all cars', cars_path, class: "btn btn-primary"%>
-   <%= link_to 'update a car', edit_car_path(@car), class: "btn btn-primary"%>
-   <%= link_to '<i class="far fa-trash-alt"></i>'.html_safe, car_path(@car), method: 'delete'%></li>
 </div>
