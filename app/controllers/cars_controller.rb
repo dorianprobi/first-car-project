@@ -13,7 +13,7 @@ class CarsController < ApplicationController
     if @car.save
       redirect_to car_path(@car)
     else
-      flash.now[:alert] = @car.errors.full_messages
+      flash[:alert] = @car.errors.full_messages
       render 'new'
     end
   end
@@ -42,6 +42,6 @@ class CarsController < ApplicationController
   private
 
   def car_params
-    params.require(:car).permit(:brand, :price)
+    params.require(:car).permit(:brand, :price, :description, :photo, :user_id)
   end
 end

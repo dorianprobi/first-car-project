@@ -1,23 +1,57 @@
+<<<<<<< HEAD
+<h1>Add your Car</h1>
+<p>Enter your infos!</p>
+<% if @car.errors.full_messages %>
+  <p>Something went wrong...</p>
+  <%= @car.errors.full_messages %>
+<% end %>
+
+
+
+
+
 <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://images.unsplash.com/photo-1523676060187-f55189a71f5e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ead3ae36f1c95df4cdb88434540e29ad&auto=format&fit=crop&w=1650&q=80');">
  <div class="banner-content">
    <div class="view_new">
- <div class="flexbox">
-   <div class="page_new">
-     <div style="text-align: center;">
-       <h1>Add your Car</h1>
-       <p>Please enter the car infos!</p>
-       <div class="users_input">
-         <%= simple_form_for @car do |f| %>
-         <div class="input_field">
-           <%= f.input :brand %>
-           <%= f.input :price %>
-           <%= f.submit "Add car", class: "btn btn-primary" %>
+     <div class="flexbox">
+       <div class="page_new">
+         <div style="text-align: center;">
+           <h1>Add your Car</h1>
+           <p>Please enter the car infos!</p>
+           <div class="users_input">
+             <%= simple_form_for @car do |f| %>
+             <div class="input_field">
+               <%= f.input :brand %>
+               <%= f.input :price %>
+               <%= f.input :description %>
+               <%= f.input :photo %>
+               <%= f.input :photo_cache, as: :hidden %>
+               <%= f.submit "Add car", class: "btn btn-primary" %>
+             </div>
+             <% end %>
+           </div>
          </div>
-           <% end %>
+
        </div>
      </div>
    </div>
  </div>
 </div>
+
+
+<div class="beneath_banner_flex">
+ <div class="text_beneath_banner">
+   <h3>AMAX Insurance</h3>
+   <p>To make sure your car will be taken care of</p>
+   <img src="" alt="">
+ </div>
+</div>
+
+
+<div class="beneath_banner_flex">
+ <div class="text_beneath_banner">
+   <h3>AMAX Insurance</h3>
+   <p>giving others the opertunity to drive their dream</p>
+   <img src="" alt="">
  </div>
 </div>

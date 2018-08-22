@@ -1,6 +1,7 @@
-
-
-<div>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
+         url('<%= cl_image_path @car.photo, height: 300, width: 400, crop: :fill %>')">
+</div>
+<div class="container">
  <div>
    <h1> <%= @car.brand %> </h1>
  </div>
@@ -11,4 +12,3 @@
    <%= link_to 'update a car', edit_car_path(@car), class: "btn btn-primary"%>
    <%= link_to '<i class="far fa-trash-alt"></i>'.html_safe, car_path(@car), method: 'delete'%></li>
 </div>
-
