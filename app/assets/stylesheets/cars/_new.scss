@@ -23,7 +23,7 @@ margin-top: 63px;
 }
 
 .banner{
- height: 671px;
+ height: 726px;
 }
 
 .text_beneath_banner{
@@ -32,15 +32,19 @@ margin-top: 63px;
  width: 800px;
  height: 183px;
  text-align: center;
+ justify-content: space-around;
+ border: 1px solid black;
 }
 
 .beneath_banner_flex{
  display: flex;
  justify-content: space-around;
- border: 1px solid black;
  width: 600px;
- height: 583px;
- margin-top: 50px;
+}
+
+.beneath_banner_flexbox{
+  display: flex;
+  justify-content: space-around;
 }
 
 
