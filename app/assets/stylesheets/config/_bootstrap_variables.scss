@@ -22,7 +22,6 @@ $border-radius-base:  2px;
 $border-radius-large: 2px;
 $border-radius-small: 2px;
 
-
 // Patch to make simple_form compatible with bootstrap 3
 .invalid-feedback {
   display: none;
@@ -49,5 +48,8 @@ $border-radius-small: 2px;
 .custom-select.is-invalid ~ .invalid-tooltip {
   display: block;
 }
+
+$input-border-focus: $red;
+$input-border: $red;
 
 // Override other variables below!
