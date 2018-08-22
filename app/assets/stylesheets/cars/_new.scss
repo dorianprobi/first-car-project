@@ -1,0 +1,40 @@
+.flexbox{
+border: 1px solid darkgrey;
+width: 500px;
+height: 649px;
+margin-top: 50px;
+margin-bottom: 50px;
+}
+
+.view_new{
+display: flex;
+justify-content: space-around;
+}
+
+.input_field{
+    padding: 73px;
+}
+
+.users_input{
+ margin-top: -27px;
+}
+.page_new{
+margin-top: 63px;
+}
+
+.banner{
+ height: 671px;
+}
+
+.text_beneath_banner{
+ margin-top:50px;
+ border: 1px solid black;
+ width: 800px;
+ height: 183px;
+ text-align: center;
+}
+
+.beneath_banner_flex{
+ display: flex;
+ justify-content: space-around;
+}
