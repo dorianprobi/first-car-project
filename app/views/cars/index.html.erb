@@ -5,8 +5,6 @@
   <% @cars.each do |car| %>
    <%= link_to car_path(car) do %>
     <div class="index-card">
-      <div>
-        <img src="" class="index-card-car-photo">
         <h4 class="index-card-car-brand">
           <%= link_to car.brand, car_path(car) %>
         </h4>
@@ -15,10 +13,11 @@
         </h4>
         <ul>
           <p class="index-card-car-refuel">
+            <i class="fas fa-gas-pump"></i>
             Fair refuel
           </p>
           <p class="index-card-car-insurance">
-            <i class="fas fa-shield-check"></i>
+            <i class="fas fa-check"></i>
             Good insurance
           </p>
         </ul>

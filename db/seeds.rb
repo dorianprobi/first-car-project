@@ -16,10 +16,10 @@ User.create!(email:"joni@web69.de", password:"123456")
 User.create!(email:"caspar@gmail.com", password:"123456")
 
 puts "Creating cars...."
-Car.create!(brand: "Fiat Multipla 1.6", price: 30, user_as_owner: User.first)
-Car.create!(brand: "Fiat Multipla 1.9", price: 26, user_as_owner: User.first)
-Car.create!(brand: "Fiat Multipla 1.9 M-Jet", price: 45, user_as_owner: User.last)
-Car.create!(brand: "Fiat Multipla JTD", price: 34, user_as_owner: User.last)
+Car.create!(brand: "Mercedes-Benz 180 SL", photo:"180SL.jpg" ,price: 30, user_as_owner: User.first)
+Car.create!(brand: "Mercedes-Benz 300 SL", photo:"300-SL-AMG-1.jpg" ,price: 26, user_as_owner: User.first)
+Car.create!(brand: "Mercedes-Benz 540 K Spezial", photo:"540K.jpeg",price: 45, user_as_owner: User.last)
+Car.create!(brand: "Mercedes-Benz Pagode", photo:"Pagode.jpeg" ,price: 34, user_as_owner: User.last)
 
 
 puts "Creating bookings...."
