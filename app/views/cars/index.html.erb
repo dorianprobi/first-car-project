@@ -2,13 +2,28 @@
   <div>
     <h1> Your results </h1>
   </div>
-  <div>
-    <h3> Click on the car you would like to check out </h3>
-  </div>
-  <div>
-    <% @cars.each do |car| %>
-      <h4> <%= link_to car.brand, car_path(car) %></h4>
-      <p> <%= car.price %> € </p>
+  <% @cars.each do |car| %>
+   <%= link_to car_path(car) do %>
+    <div class="index-card">
+      <div>
+        <img src="" class="index-card-car-photo">
+        <h4 class="index-card-car-brand">
+          <%= link_to car.brand, car_path(car) %>
+        </h4>
+        <h4 class="index-card-car-price">
+          <%= car.price %> €
+        </h4>
+        <ul>
+          <p class="index-card-car-refuel">
+            Fair refuel
+          </p>
+          <p class="index-card-car-insurance">
+            <i class="fas fa-shield-check"></i>
+            Good insurance
+          </p>
+        </ul>
+      </div>
+    </div>
     <% end %>
-  </div>
+  <% end %>
 </div>
