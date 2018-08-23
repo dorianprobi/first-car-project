@@ -1,18 +1,15 @@
 <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('<%= image_path "car.jpg" %>');">
   <div class="banner-content">
-    <h1 class="classic_font">Welcome to Classical <br> car rental</h1>
+    <h1 class="classic_font">Welcome to Classic <br> car rental</h1>
     <p class="classic_font">established 2018</p>
-      <div class= "home">
+      <div class= "home id="search_bar"">
         <!-- Search form -->
-        <div class="search_bar">
+        <div class="homepage_search ersten" id="search_bar">
           <%= form_tag cars_path, method: :get do %>
-            <%= text_field_tag :query,
-              params[:query],
-              class: "form-control",
-              placeholder: "Find a car"
-            %>
+          <%= text_field_tag :query,params[:query], class: "fom-control ersten", placeholder: "starting date"%>
+          <%= text_field_tag :query,params[:query], class: "fom-control ersten", placeholder: "ending date"%>
+            <%= text_field_tag :query,params[:query], class: "fom-control ersten", placeholder: "Find a car"%><input type="submit" id="search_submit_button"class="ersten search_button">
           <% end %>
-          <%= link_to "Search", cars_path, class: "btn btn-treehouse" %>
         </div>
       </div>
   </div>
