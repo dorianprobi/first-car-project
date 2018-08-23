@@ -55,4 +55,13 @@ class CarsController < ApplicationController
       Car.all
     end
   end
+
+  def further_surch
+     if params[:query].present?
+      sql_query = "brand ILIKE :query OR description ILIKE :query OR price ILIKE :query"
+      @cars = Car.where(sql_query, query: "%#{params[:query]}%")
+    else
+      @cars = Car.all
+    end
+  end
 end
