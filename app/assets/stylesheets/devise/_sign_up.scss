@@ -4,10 +4,11 @@
  display: flex;
  justify-content:space-around;
  height: 600px;
- width: 600px;
+ width: 500px;
  background-color: whitesmoke;
  border: 1px solid white;
- margin-left: 35%;
+ margin-left:700px;
+ margin-right:800px;
 }
 .email-input {
   margin-bottom: 20px;
@@ -17,6 +18,8 @@
   width: 100%;
   text-align: left;
   color: white;
+  box-shadow: none;
+
 }
 .password-input {
 margin-top: 40px;
@@ -24,7 +27,7 @@ margin-right: 25%;
 height: 80px;
 width: 100%;
 color: white;
-
+box-shadow: none;
 }
 .password_confirmation {
 margin-top: 40px;
@@ -32,6 +35,7 @@ margin-right: 25%;
 height: 80px;
 width: 100%;
 color: white;
+box-shadow: none;
 }
 .signup_button {
 
