@@ -1,0 +1,44 @@
+.page-container {
+}
+.signup_container {
+ display: flex;
+ justify-content:space-around;
+ height: 600px;
+ width: 600px;
+ background-color: whitesmoke;
+ border: 1px solid white;
+ margin-left: 35%;
+}
+.email-input {
+  margin-bottom: 20px;
+  margin-top: 100px;
+  margin-right: 25%;
+  height: 80px;
+  width: 100%;
+  text-align: left;
+  color: white;
+}
+.password-input {
+margin-top: 40px;
+margin-right: 25%;
+height: 80px;
+width: 100%;
+color: white;
+
+}
+.password_confirmation {
+margin-top: 40px;
+margin-right: 25%;
+height: 80px;
+width: 100%;
+color: white;
+}
+.signup_button {
+
+ border: 1px solid white;
+ opacity: 0.5;
+ width: 25%;
+justify: space-around;
+ color: white;
+ background-color: black;
+ }
