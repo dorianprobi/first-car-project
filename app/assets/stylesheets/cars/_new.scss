@@ -1,25 +1,25 @@
-.flexbox{
-border: 1px solid darkgrey;
-width: 500px;
-height: 649px;
-margin-top: 50px;
-margin-bottom: 50px;
+.small_container{
+  border: 1px solid white;
+  border-radius: 14px;
+  background-color: rgba(0, 0, 0, 0.2);
+
 }
 
 .view_new{
 display: flex;
 justify-content: space-around;
+
 }
 
 .input_field{
-    padding: 73px;
+    padding: 55px;
 }
 
 .users_input{
  margin-top: -27px;
 }
 .page_new{
-margin-top: 63px;
+margin-top: -210px;
 }
 
 .banner{

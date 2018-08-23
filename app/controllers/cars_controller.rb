@@ -1,6 +1,7 @@
 class CarsController < ApplicationController
   def index
     @cars = Car.all
+    # params[:query]
   end
 
   def new
@@ -20,6 +21,7 @@ class CarsController < ApplicationController
 
   def show
     @car = Car.find(params[:id])
+    @booking = Booking.new
   end
 
   def edit

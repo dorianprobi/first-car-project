@@ -4,16 +4,75 @@
      <div class="row">
       <div class="flexbox-text">
         <h2> <strong><%= @car.brand %></strong></h2>
+        <% if flash[:notice] %>
+          <div class="form__notice">
+            <p><%= flash[:notice] %></p>
+          </div>
+        <% end %>
 
         <p> <%= @car.price %> € </p>
 
         <p> <%= @car.description %> </p>
       </div>
         <%= link_to 'all cars', cars_path, class: "btn btn-primary"%>
-        <%= link_to 'update', edit_car_path(@car), class: "btn btn-primary"%>
+        <%= link_to 'rent', edit_car_path(@car), class: "btn btn-primary"%>
         <%= link_to '<i class="far fa-trash-alt"></i>'.html_safe, car_path(@car), method: 'delete'%></li>
      </div>
    </div>
  </div>
 </div>
+
 </div>
+
+
+<br>
+<br>
+<br>
+<% if flash[:notice] %>
+  <div class="form__notice">
+    <p><%= flash[:notice] %></p>
+  </div>
+<% end %>
+
+<div class="outer_grid_container">
+ <div class="grid_container">
+   <div class="main_container">
+     <div class="container_left">
+       <div class="container_right_top1">
+         <h4><strong><%= @car.brand %></strong></h4>
+       </div>
+       <div class="container_right_top2">
+         <p><strong><%= @car.price %> € </strong></p>
+         <!-- <p id="des"> <%= @car.description %> </p> -->
+
+         <p id="des">Lorem ipsum *10 erqjknkaf lkejralkt agadjglj lergljer gjrojgjlsködlfk ölskdglöfksödlkgfölkrlkglkas
+         fgsjlaflskköakjflkdglksdmanfmsnd,fngsndaf,
+         sda,fsdam,m.sdm,dsmm,.dsmm,ds.</p>
+
+       </div>
+       <div class="container">
+        <div class="form-wrapper" style="width: 400px; margin: 0 auto;">
+          <h3>Add a time for your car to create booking..</h3>
+          <% if flash[:alert] %>
+            <div class="form__alert">
+              <p>Booking not saved...</p>
+              <p><%= flash[:alert] %></p>
+            </div>
+          <% end %>
+          <%= simple_form_for [@car, @booking] do |f| %>
+            <div class="form-group">
+              <%= f.input :starts_at, as: :date, html5: true %>
+              <%= f.input :ends_at, as: :date, html5: true %>
+              <% f.input :car_id %>
+              <%= f.submit class: 'btn btn-primary' %>
+            <% end %>
+            </div>
+        </div>
+       <div class="container_right_bottom">
+         <p class="buttom_information"><%= link_to "Book", cars_path, id: "book_buttom",class: "btn btn-treehouse" %></p>
+       </div>
+   </div>
+ </div>
+</div>
+
+
