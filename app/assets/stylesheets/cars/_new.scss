@@ -1,51 +1,48 @@
-.flexbox{
-border: 1px solid darkgrey;
-width: 500px;
-height: 649px;
-margin-top: 50px;
-margin-bottom: 50px;
+.small_container{
+ border: 1px solid white;
+ border-radius: 14px;
+ background-color: rgba(0, 0, 0, 0.2);
+
 }
 
 .view_new{
 display: flex;
 justify-content: space-around;
+
 }
 
 .input_field{
-    padding: 73px;
+   padding: 55px;
 }
 
 .users_input{
- margin-top: -27px;
+margin-top: -27px;
 }
 .page_new{
-margin-top: 63px;
+margin-top: -5px;
 }
 
 .banner{
- height: 726px;
+height: 726px;
 }
 
 .text_beneath_banner{
- margin-top:50px;
- border: 1px solid black;
- width: 800px;
- height: 183px;
- text-align: center;
- justify-content: space-around;
- border: 1px solid black;
+margin-top:50px;
+border: 1px solid black;
+width: 800px;
+height: 183px;
+text-align: center;
+justify-content: space-around;
+border: 1px solid black;
 }
 
 .beneath_banner_flex{
- display: flex;
- justify-content: space-around;
- width: 600px;
+display: flex;
+justify-content: space-around;
+width: 600px;
 }
 
 .beneath_banner_flexbox{
-  display: flex;
-  justify-content: space-around;
+ display: flex;
+ justify-content: space-around;
 }
-
-
-
