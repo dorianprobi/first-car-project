@@ -4,23 +4,21 @@
     <p class="classic_font">established 2018</p>
       <div class= "home">
         <!-- Search form -->
-        <div class = "search_form">
-          <input type="text" placeholder="Date" class="ersten">
-          <input type="text" placeholder="location" class="ersten">
-          <input type="text" placeholder="type of car" class ="ersten">
-           <%= link_to "Search", cars_path, class: "btn btn-treehouse" %>
+        <div class="search_bar">
+          <%= form_tag cars_path, method: :get do %>
+            <%= text_field_tag :query,
+              params[:query],
+              class: "form-control",
+              placeholder: "Find a car"
+            %>
+          <% end %>
+          <%= link_to "Search", cars_path, class: "btn btn-treehouse" %>
         </div>
       </div>
   </div>
 </div>
 
-<%= form_tag cars_path, method: :get do %>
-  <%= text_field_tag :query,
-    params[:query],
-    class: "form-control",
-    placeholder: "Find a car"
-  %>
-<% end %>
+
 
 
 
