@@ -10,9 +10,12 @@
 @import "font-awesome";
 
 // Your CSS partials
-@import "layouts/index";
 @import "components/index";
 @import "pages/index";
 @import "cars/index";
+
+@import "devise/index";
+
 @import "forms/index";
 @import "bookings/index"
+

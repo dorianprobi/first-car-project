@@ -16,8 +16,9 @@
       <%= render "components/navbar" %>
     </div>
       <%= yield %>
+    <div><%= render "components/footer" %></div>
     <%= javascript_include_tag 'application' %>
     <%= javascript_pack_tag 'application' %>
-    <div><%= render "components/footer" %></div>
+
   </body>
 </html>

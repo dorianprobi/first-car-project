@@ -1,37 +1,41 @@
 .banner_index{
-  height:300px;
+ height:300px;
 }
 
 .outer_box{
-  display: flex;
-  justify-content: space-around;
+ display: flex;
+ justify-content: space-around;
 }
 
 .flexbox{
-  height: 200px;
-  width: 80%;
-  border-radius: 10px;
+ height: 200px;
+ width: 80%;
+ border-radius: 10px;
+ margin-bottom: 50px;
+ margin-top: 50px;
+ border: 1px solid darkgrey;
+
 }
 
 .grid{
-  display: grid;
-  grid-template-columns: 45% 55%;
-  grid-template-rows: 200px;
+ display: grid;
+ grid-template-columns: 45% 55%;
+ grid-template-rows: 200px;
 }
 .image{
-  max-height: 198px;
-  grid-row: 1 / span 1;
-  grid-column: 1 / span 1;
-  border-radius: 9px 0 0 9px;
- object-fit: cover;
-  width: 100%;
+ max-height: 198px;
+ grid-row: 1 / span 1;
+ grid-column: 1 / span 1;
+ border-radius: 9px 0 0 9px;
+object-fit: cover;
+ width: 100%;
 
 }
 
 .information{
-  grid-row: 1 / span 1;
-  grid-column: 2 / span 1;
-  position: relative;
+ grid-row: 1 / span 1;
+ grid-column: 2 / span 1;
+ position: relative;
 }
 
 .cars_description{
@@ -40,55 +44,55 @@ text-align: center;
 }
 
 .price_brand{
-  display: flex;
-  justify-content: space-between;
-  margin: 10px;
+ display: flex;
+ justify-content: space-between;
+ margin: 10px;
 }
 
 .buttom_information{
-  text-align:right;
-  margin-top: 40px;
-  position: absolute;
-  bottom: -9px;
-  right: 2px;
+ text-align:right;
+ margin-top: 40px;
+ position: absolute;
+ bottom: -4px;
+ right: 5px;
 }
 
 #book_buttom{
-  color: #2b5f89;
-  border: 2px solid #2b5f89;
-  border-radius: 16px;
-  font-weight: bold;
-  background: transparent;
-  transition: background 0.3s ease;
-  margin: 10px;
-  padding-right: 60px;
-  padding-left: 60px;
-  padding-top: 5px;
-  padding-bottom:5px;
-  margin-top: 37px;
+ color: #2b5f89;
+ border: 2px solid #2b5f89;
+ border-radius: 16px;
+ font-weight: bold;
+ background: transparent;
+ transition: background 0.3s ease;
+ margin: 10px;
+ padding-right: 60px;
+ padding-left: 60px;
+ padding-top: 5px;
+ padding-bottom:5px;
+ margin-top: 37px;
 }
 #book_buttom:hover{
-  opacity: 1;
-  background: whitesmoke;
-  text-decoration: none;
-  color: orange;
-  border: 2px solid orange;
-  margin-top: 37px;
+ opacity: 1;
+ background: whitesmoke;
+ text-decoration: none;
+ color: orange;
+ border: 2px solid orange;
+ margin-top: 37px;
 
 }
 
 .symbols_and_buttom{
-  margin-top: 35px;
+ margin-top: 35px;
 }
 
 .fair_fuel{
-  margin-top:50px;
+ margin-top:50px;
 }
 
 .insurance{
-  margin-top: -10px;
+ margin-top: -10px;
 }
 
 .symbols{
-  margin-left: 20px;
+ margin-left: 20px;
 }
