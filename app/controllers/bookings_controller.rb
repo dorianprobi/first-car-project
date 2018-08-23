@@ -1,6 +1,8 @@
 class BookingsController < ApplicationController
 
   def show
+    @car = Car.find(params[:car_id])
+    @booking = Booking.find(params[:id])
   end
 
   def create
@@ -19,10 +21,9 @@ class BookingsController < ApplicationController
 
 
   def destroy
-    @car = Car.find(params[:car_id])
     @booking = Booking.find(params[:id])
     @booking.delete
-    redirect_to car_path(@car)
+    redirect_to car_path(@booking.car)
   end
 
   private
