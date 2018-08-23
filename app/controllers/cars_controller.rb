@@ -1,6 +1,7 @@
 class CarsController < ApplicationController
+
   def index
-    @cars = Car.all
+    @cars = search_for_car(Car.all)
     # params[:query]
   end
 
@@ -45,5 +46,13 @@ class CarsController < ApplicationController
 
   def car_params
     params.require(:car).permit(:brand, :price, :description, :photo, :user_id)
+  end
+
+  def search_for_car(scope)
+    if params[:query].present?
+      Car.full_text_search(params[:query])
+    else
+      Car.all
+    end
   end
 end

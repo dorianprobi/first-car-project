@@ -1,49 +1,46 @@
-
 <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('<%= image_path "car1.jpg" %>');">
- <div class="banner-content">
-   <div class="view_new">
-     <div class="flexbox">
-       <div class="page_new">
-         <div style="text-align: center;" class="small_container">
-           <h1>Add your Car</h1>
-           <p>Please enter the car infos!</p>
-           <div class="users_input">
-             <%= simple_form_for @car do |f| %>
-             <div class="input_field">
-               <%= f.input :brand %>
-               <%= f.input :price %>
-               <%= f.input :description %>
-               <%= f.input :photo %>
-              <p><%= f.input :photo_cache, as: :hidden %></p>
-               <%= f.submit "Add car", class: "btn btn-primary" %>
-             </div>
-             <% end %>
-           </div>
-         </div>
+
+<div class="banner-content">
+  <div class="view_new">
+      <div class="page_new">
+        <div style="text-align: center;" class="small_container">
+          <h1>Add your Car</h1>
+          <p>Please enter the car infos!</p>
+          <div class="users_input">
+            <%= simple_form_for @car do |f| %>
+            <div class="input_field">
+              <%= f.input :brand %>
+              <%= f.input :price %>
+              <%= f.input :description %>
+              <%= f.input :photo %>
+             <p><%= f.input :photo_cache, as: :hidden %></p>
+              <%= f.submit "Add car", class: "btn btn-primary" %>
+            </div>
+            <% end %>
+          </div>
+        </div>
+
        </div>
-     </div>
-   </div>
+  </div>
+</div>
+</div>
+
+<div class="beneath_banner_flexbox">
+ <div class="beneath_banner_flex">
+  <div class="text_beneath_banner">
+    <h3>AMAX Insurance</h3>
+    <p>To make sure your car will be taken care of</p>
+    <img src="" alt="">
+  </div>
  </div>
 </div>
 
 <div class="beneath_banner_flexbox">
-  <div class="beneath_banner_flex">
-   <div class="text_beneath_banner">
-     <h3>AMAX Insurance</h3>
-     <p>To make sure your car will be taken care of</p>
-     <img src="" alt="">
-   </div>
+ <div class="beneath_banner_flex">
+  <div class="text_beneath_banner">
+    <h3>creating opertunities</h3>
+    <p>giving others the opertunity to drive their dream</p>
+    <img src="" alt="">
   </div>
+ </div>
 </div>
-
-<div class="beneath_banner_flexbox">
-  <div class="beneath_banner_flex">
-   <div class="text_beneath_banner">
-     <h3>creating opertunities</h3>
-     <p>giving others the opertunity to drive their dream</p>
-     <img src="" alt="">
-   </div>
-  </div>
-</div>
-
-

@@ -1,57 +1,59 @@
 h3{
- text-align: center;
+<<<<<<< HEAD
+text-align: center;
 }
 
 .outer_grid_container{
- justify-content:space-around;
- display:flex;
+justify-content:space-around;
+display:flex;
 }
 
 .grid_container{
- width:70%;
- height:400px;
- background-color: white;
- border-radius: 14px;
- // border: solid 2px;
+width:70%;
+height:400px;
+background-color: white;
+border-radius: 14px;
+// border: solid 2px;
 }
 
 .main_container{
- display:grid;
- grid-template-columns: 5% 30% 5% 55% 5%;
- grid-template-rows:75px 125px 125px 75px;
+display:grid;
+grid-template-columns: 5% 30% 5% 55% 5%;
+grid-template-rows:75px 125px 125px 75px;
 }
 
 
 
 .container_left{
- background-image: url("https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=70d09974c4be252b9d20274ef0122ce9&auto=format&fit=crop&w=700&q=60
+background-image: url("https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=70d09974c4be252b9d20274ef0122ce9&auto=format&fit=crop&w=700&q=60
 https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=70d09974c4be252b9d20274ef0122ce9&auto=format&fit=crop&w=700&q=60
 ");
- background-size: cover;
- background-position: center center;
- grid-column: 2/ span 1;
- grid-row: 2 / span 2;
- border-radius:14px;
+background-size: cover;
+background-position: center center;
+grid-column: 2/ span 1;
+grid-row: 2 / span 2;
+border-radius:14px;
 
 
 }
 .container_right_top1{
- grid-column: 4 / span 1;
- grid-row: 1 / span 1;
- text-align: left;
+grid-column: 4 / span 1;
+grid-row: 1 / span 1;
+text-align: left;
 }
+
 .container_right_top2{
- grid-column-start: 4;
- grid-column-end: 4;
- grid-row: 2 / span 1;
- text-align: right;
+grid-column-start: 4;
+grid-column-end: 4;
+grid-row: 2 / span 1;
+text-align: right;
 }
 
 
 .container_right_bottom{
- grid-column: 4 / span 1;
- grid-row: 3 / span 1;
- position:relative;
+grid-column: 4 / span 1;
+grid-row: 3 / span 1;
+position:relative;
 }
 
 #book_buttom{
@@ -75,6 +77,4 @@ border: 2px solid orange;
 }
 
 #des{
- text-align: left;
-
-}
+text-align: left;
