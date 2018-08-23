@@ -1,0 +1,48 @@
+.page-container {
+  display: flex;
+  justify-content: space-around;
+}
+.login_container {
+ display: flex;
+ margin-top: 100px;
+ align-content: center;
+ justify-content:space-around;
+ height: 600px;
+ width: 500px;
+ background-color: whitesmoke;
+ border: 1px solid white;
+ border-radius: 20px;
+}
+.login_email-input {
+  margin-bottom: 20px;
+  margin-top: 100px;
+  margin-right: 25%;
+  align-content: space-around;
+  height: 80px;
+  width: 100%;
+  text-align: left;
+  color: white;
+  box-shadow: none;
+
+}
+.login_password-input {
+align-content: space-around;
+height: 80px;
+width: 100%;
+color: white;
+box-shadow: none;
+}
+
+.login_button {
+ margin-top: 40px;
+ border: 1px solid white;
+ opacity: 0.5;
+ width: 25%;
+ align-content: space-around;
+ color: white;
+ background-color: black;
+ }
+.login_header {
+  text-align: center;
+  color: white;
+}
