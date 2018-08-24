@@ -30,6 +30,11 @@
  object-fit: cover;
  width: 100%;
 
+ img {
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px;
+ }
+
 }
 
 .information{
