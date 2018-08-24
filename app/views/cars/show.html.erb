@@ -2,11 +2,6 @@
 <br>
 <br>
 <div class="container">
- <%if flash[:notice] %>
-   <div class="form__notice">
-     <p><%= flash[:notice] %></p>
-   </div>
-  <% end %>
    <div class="outer_grid_container">
      <div class="grid_container">
        <div class="main_container">
@@ -16,7 +11,7 @@
               <h4><strong><%= @car.brand %></strong></h4>
             </div>
               <div class="container_right_top2 classic_font">
-                <p><strong><%= @car.price %> € </strong></p>
+                <p id="car_price"><strong><%= @car.price %> € </strong></p>
                 <p id="des"><%=@car.description%></p>
               </div>
                 <div class="container_right_bottom">
@@ -26,12 +21,6 @@
                   </div>
 
                   <div class="form-wrapper" >
-                   <!--   <% if flash[:alert] %>
-                     <div class="form__alert">
-                     <p>Booking not saved...</p>
-                     <p><%= flash[:alert] %></p>
-                     </div> -->
-                     <!--  <% end %> -->
                     <%= simple_form_for [@car, @booking] do |f| %>
                     <div class="form-group" id="date_form">
                        <%= f.input :starts_at, as: :date, html5: true %>
