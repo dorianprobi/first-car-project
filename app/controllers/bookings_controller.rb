@@ -10,9 +10,10 @@ class BookingsController < ApplicationController
     @car = Car.find(params[:car_id])
     @booking.car = @car
     @booking.user = current_user
+    # @booking_id = Booking.find(params[:id])
      if @booking.save
       flash[:notice] = "Your booking has been placed"
-      redirect_to car_path(@car)
+      redirect_to car_booking_path(@car, @booking)
     else
       flash[:alert] = @booking.errors.full_messages
       render 'cars/show'

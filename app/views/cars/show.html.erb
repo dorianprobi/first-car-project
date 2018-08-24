@@ -30,12 +30,12 @@
          </div>
        <div>
          <div class="form-wrapper" >
-           <% if flash[:alert] %>
-           <!-- <div class="form__alert">
+           <!--<% if flash[:alert] %>
+           <div class="form__alert">
            <p>Booking not saved...</p>
            <p><%= flash[:alert] %></p>
            </div>
-           <% end %> -->
+           <% end %>-->
            <%= simple_form_for [@car, @booking] do |f| %>
            <div class="form-group" id="date_form">
              <%= f.input :starts_at, as: :date, html5: true %>
