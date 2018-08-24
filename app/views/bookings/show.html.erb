@@ -1,5 +1,5 @@
 
-<div class="banner_confirmation" style="background-image: linear-gradient(-150deg, rgba(0,101,168,0.6) 0%, rgba(0,0,0,0) 1%), url('<%= image_path "confirmation_page_banner_2.jpeg" %>'); background-position:  58% 60%">
+<div class="banner_confirmation" style="background-image: linear-gradient(-150deg, rgba(0,101,168,0.6) 0%, rgba(0,0,0,0) 1%), url('<%= cl_image_path @car.photo_url if @car.photo_url.present? %>'); background-position:  58% 60%">
   <div class="container">
     <div class="container-content">
       <div class="container-header">
