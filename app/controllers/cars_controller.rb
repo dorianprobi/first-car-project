@@ -13,7 +13,7 @@ class CarsController < ApplicationController
     @car = Car.new(car_params)
     @car.user_as_owner = current_user
     if @car.save
-      redirect_to car_path(@car)
+      redirect_to dashboard_path(current_user)
     else
       flash[:alert] = @car.errors.full_messages
       render 'new'
