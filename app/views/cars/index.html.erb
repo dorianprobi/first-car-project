@@ -13,12 +13,12 @@
          </div>
          <div class="information">
            <div class="price_brand">
-             <h4 class="cars_brand classic_font" id="car_name"><b> <%= link_to car.brand, car_path(car) %></b></h4>
+             <h4 class="cars_brand classic_font" id="car_name"><b><%=car.brand%></b>
              <h4 class="classic_font"><b><%= car.price %> €</b></h4>
            </div>
            <p class="cars_description classic_font"style="text-align: center;"><%= %></p>
            <div class="symbols_and_buttom">
-             <p class="buttom_information"><%= link_to "Book", cars_path, id: "book_buttom",class: "btn btn-treehouse" %></p>
+             <p class="buttom_information"><%= link_to "Book", car_path(car), id:"book_buttom",class: "btn btn-treehouse" %></p>
              <div class="symbols">
                <p class="fair_fuel"><i class="fas fa-gas-pump "></i>Fair refuel</p>
                <p class="insurance"><i class="fas fa-check"></i>Good insurance</p>
