@@ -13,7 +13,7 @@
         <p>Owner: <%= @car.user_as_owner.email %></p>
         <p>Paymentmethod: Mastercard</p>
         <div class="confrimation_buttons">
-          <p><%= link_to "Confirm", booking_path(@booking), method: :delete  %></button></p>
+          <p><%= link_to "Confirm", dashboard_path%></button></p>
           <p><%= link_to "Cancel booking", booking_path(@booking), method: :delete  %></button></p>
         </div>
 
