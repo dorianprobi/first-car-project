@@ -1,66 +1,28 @@
-.page-container {
-  display: flex;
-  justify-content: space-around;
-}
-.signup_container {
-   display: flex;
-   margin-top: 50px;
-   align-content: center;
-   justify-content:space-around;
-   height: 600px;
-   width: 500px;
-   background-color: transparent;
-   border: 1px solid white;
-   border-radius: 20px;
-}
-.email-input {
-  margin-bottom: 20px;
-  margin-top: 100px;
-  margin-right: 25%;
-  align-content: space-around;
-  height: 80px;
-  width: 100%;
-  text-align: left;
-  color: white;
-  box-shadow: none;
-
-}
-.password-input {
-  align-content: space-around;
-  height: 80px;
-  width: 100%;
-  color: white;
-  box-shadow: none;
-}
-.password_confirmation {
-  margin-top: 40px;
-  margin-right: 25%;
-  height: 80px;
-  width: 100%;
-  color: white;
-  box-shadow: none;
-}
-.signup_button {
-   opacity: 0.2;
-   width: 25%;
-   align-content: space-around;
-   background-color: transparent;
-   text-align: center;
- }
-.sign_up_header {
-  text-align: center;
-  color: white;
+.signup-small_container{
+ border: 1px solid white;
+ border-radius: 14px;
+ background-color: rgba(0, 0, 0, 0.2);
+ margin-top: 150px;
 }
 
-.sign_up{
-  height: 39px;
-  background-color: transparent;
-  border: 2px solid white;
-  border-radius: 10px;
-  margin-top: 498px;
+.view_signup{
+display: flex;
+justify-content: space-around;
+
 }
 
-.banner-content{
-      margin-bottom: 36px;
+.signup-input_field{
+   padding: 55px;
+}
 
+.signup_input{
+margin-top: -27px;
+color: white;
+}
+.signup_page_new{
+margin-top: -5px;
+}
+
+.signup_banner{
+height: 950px;
 }
