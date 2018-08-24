@@ -1,0 +1,15 @@
+<h1>Dashboard</h1>
+<h2>My booked cars</h2>
+
+<% current_user.booked_cars.each do |car| %>
+  <p><%= car.brand %></p>
+  <p><%= car.price %></p>
+  <p><%= car.user_as_owner %></p>
+<% end %>
+
+<h2>My owned cars</h2>
+<% current_user.owned_cars.each do |car| %>
+  <p><%= car.brand %></p>
+  <p><%= car.price %></p>
+  <p><%= car.user_as_owner %></p>
+<% end %>
