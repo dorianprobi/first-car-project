@@ -1,0 +1,52 @@
+<h2 classic_font id="head">My booked cars</h2>
+
+<% current_user.booked_cars.each do |car| %>
+<div class="outer_box">
+  <div class="flexbox">
+    <div class="grid">
+      <div class="image">
+        <p><img class="image" src="    https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=70d09974c4be252b9d20274ef0122ce9&auto=format&fit=crop&w=700&q=60" alt=""></p>
+      </div>
+          <div class="information classic_font">
+            <div class="price_brand">
+             <h4 class="cars_brand classic_font" id="car_name"><b><%=car.brand%></b>
+             <h4 class="classic_font"><b><%= car.price %> €</b></h4>
+            </div>
+            <!--   <p><%= car.description %></p> -->
+              <div class="infos">
+                <p>From: <%= @booking.starts_at %></p>
+                <p>To: <%= @booking.ends_at %></p>
+                <h5>Owner: <%= car.user_as_owner.email %></h5>
+              </div>
+          </div>
+    </div>
+  </div>
+</div>
+<% end %>
+
+<h2 classic_font id="head">My owned cars</h2>
+
+<% current_user.owned_cars.each do |car| %>
+<div class="outer_box">
+  <div class="flexbox">
+    <div class="grid">
+      <div class="image">
+        <p><img class="image" src="    https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=70d09974c4be252b9d20274ef0122ce9&auto=format&fit=crop&w=700&q=60" alt=""></p>
+      </div>
+      <div class="information classic_font">
+            <div class="price_brand">
+              <h4 class="cars_brand classic_font" id="car_name">
+              <b><%=car.brand%></b>
+              <h4 class="classic_font"><b><%= car.price %> €</b></h4>
+            </div>
+              <div class="infos">
+                <h5>Owner: <%= car.user_as_owner.email %></h5>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+</div>
+<% end %>
+
+

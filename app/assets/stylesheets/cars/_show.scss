@@ -9,38 +9,29 @@ display:flex;
 }
 
 .grid_container{
-width:70%;
-height:400px;
-background-color: white;
-border-radius: 14px;
+  background-color: white;
+  border-radius: 14px;
 // border: solid 2px;
 }
 
 .main_container{
 display:grid;
-grid-template-columns: 5% 30% 5% 55% 5%;
-grid-template-rows:75px 125px 125px 75px;
+grid-template-columns: 20px 180px 20px 500px 20px;
+grid-template-rows: 75px auto auto 75px;
 position: relative;
+border: 2px solid #A3B3C9;
+border-radius:12px;
 }
 
 
-
 .container_left{
-background-image: url("https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=70d09974c4be252b9d20274ef0122ce9&auto=format&fit=crop&w=700&q=60
-https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=70d09974c4be252b9d20274ef0122ce9&auto=format&fit=crop&w=700&q=60
-
-https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=70d09974c4be252b9d20274ef0122ce9&auto=format&fit=crop&w=700&q=60
-https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=70d09974c4be252b9d20274ef0122ce9&auto=format&fit=crop&w=700&q=60
-
-");
 background-size: cover;
 background-position: center center;
 grid-column: 2/ span 1;
 grid-row: 2 / span 2;
 border-radius:14px;
-
-
 }
+
 .container_right_top1{
 grid-column: 4 / span 1;
 grid-row: 1 / span 1;
@@ -51,7 +42,7 @@ text-align: left;
 grid-column-start: 4;
 grid-column-end: 5;
 grid-row-start: 2;
-grid-row-end: 4;
+grid-row-end: 3;
 text-align: right;
 }
 
@@ -60,6 +51,7 @@ text-align: right;
 grid-column: 4 / span 1;
 grid-row: 3 / span 1;
 position:relative;
+display:flex;
 }
 
 #book_buttom{
@@ -70,11 +62,6 @@ color: #2b5f89;
  background: transparent;
  transition: background 0.3s ease;
  margin: 10px;
- padding-right: 7px;
- padding-left: 1px;
- padding-top: 2px;
- padding-bottom: 23px;
- width: 159px;
 }
 #book_buttom:hover{
 opacity: 1;
@@ -95,7 +82,7 @@ font-size:12px;
 
 }
 #symbole{
- margin-left: -15px;
+ margin-top: 0px;
 }
 
 .container{
@@ -103,14 +90,41 @@ font-size:12px;
  width:100%;
 }
 .form-wrapper{
- position: absolute;
   bottom: -43px;
   right: 40px;
+  padding-left: 10%;
+  padding-left: 20%;
+
+  form {
+    width: 180px;
+  }
+
+  input {
+    border: 1px solid grey !important;
+  }
+
+  input#book_buttom {
+    width:100%;
+    padding-left:0px;
+    padding-right: 0px;
+    margin-left:0px;
+    margin-right: 0px;
+    text-align:center;
+    }
 }
 
 .fair_fuel{
- margin-top: 76px;
+  margin-top: 0px !important;
+  margin-bottom: 26px;
 }
 #date_form{
  margin-bottom: -41px;
+ }
+
+ .body{
+    background-color: white;
+ }
+
+ #car_price{
+  font-size:30px;
  }

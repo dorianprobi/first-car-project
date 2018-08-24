@@ -2,57 +2,39 @@
 <br>
 <br>
 <div class="container">
- <%if flash[:notice] %>
-   <div class="form__notice">
-     <p><%= flash[:notice] %></p>
-   </div>
-   <% end %>
    <div class="outer_grid_container">
      <div class="grid_container">
        <div class="main_container">
-       <div class="container_left">
-       </div>
-       <div class="container_right_top1">
-          <h4><strong><%= @car.brand %></strong></h4>
-       </div>
-       <div class="container_right_top2">
-         <p><strong><%= @car.price %> € </strong></p>
-         <!-- <p id="des"> <%= @car.description %> </p> -->
-         <pid="des"><%=@car.description%></p>
-         <p id="des"></p>
-       </div>
-       <div class="container_right_bottom">
-         <div class="symbols_and_buttom" id="symbole">
-           <div class="symbols">
-             <p class="fair_fuel"><i class="fas fa-gas-pump "></i>Fair refuel</p>
-             <p class="insurance"><i class="fas fa-check"></i>Good insurance</p>
-           </div>
-         </div>
-       <div>
-         <div class="form-wrapper" >
-           <!--<% if flash[:alert] %>
-           <div class="form__alert">
-           <p>Booking not saved...</p>
-           <p><%= flash[:alert] %></p>
-           </div>
-           <% end %>-->
-           <%= simple_form_for [@car, @booking] do |f| %>
-           <div class="form-group" id="date_form">
-             <%= f.input :starts_at, as: :date, html5: true %>
-             <%= f.input :ends_at, as: :date, html5: true %>
-             <% f.input :car_id %>
-             <%= f.submit class: 'btn btn-treehouse' %>
-             <% end %>
-           </div>
-         </div>
-       </div>
-     </div>
-   </div>
- </div>
+          <div class="container_left"
+               style="background-image: linear-gradient(-150deg, rgba(0,101,168,0.6) 0%, rgba(0,0,0,0) 1%), url('<%= cl_image_path(@car.photo_url) if @car.photo_url.present? %>')"
+          >
+          </div>
+            <div class="container_right_top1 classic_font">
+              <h4><strong><%= @car.brand %></strong></h4>
+            </div>
+              <div class="container_right_top2 classic_font">
+                <p id="car_price"><strong><%= @car.price %> € </strong></p>
+                <p id="des"><%=@car.description%></p>
+              </div>
+                <div class="container_right_bottom">
+                  <div class="symbols_and_buttom" id="symbole">
+                      <p class="fair_fuel"><i class="fas fa-gas-pump "></i>Fair refuel</p>
+                      <p class="insurance"><i class="fas fa-check"></i>Good insurance</p>
+                  </div>
+
+                  <div class="form-wrapper" >
+                    <%= simple_form_for [@car, @booking] do |f| %>
+                    <div class="form-group" id="date_form">
+                       <%= f.input :starts_at, as: :date, html5: true %>
+                       <%= f.input :ends_at, as: :date, html5: true %>
+                      <%= f.submit class: 'btn btn-treehouse', id: "book_buttom" %>
+                   <% end %>
+                    </div>
+                  </div>
+              </div>
+          </div>
+    </div>
 </div>
 
 
-      <!--  </div>
-        <p class="buttom_information"><%= link_to "Book", cars_path, id: "book_buttom",class: "btn btn-treehouse" %></p>
-      </div> -->
-<!--    </div> -->
+
