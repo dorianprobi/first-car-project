@@ -1,3 +1,4 @@
+
 <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('<%= image_path "car.jpg" %>');">
   <div class="banner-content">
     <h1 class="classic_font">Welcome to Classic <br> car rental</h1>
@@ -6,16 +7,47 @@
         <!-- Search form -->
         <div class="homepage_search ersten" id="search_bar">
           <%= form_tag cars_path, method: :get do %>
-          <%= text_field_tag :query,params[:query], class: "fom-control ersten", placeholder: "starting date"%>
-          <%= text_field_tag :query,params[:query], class: "fom-control ersten", placeholder: "ending date"%>
-            <%= text_field_tag :query,params[:query], class: "fom-control ersten", placeholder: "Find a car"%><input type="submit" id="search_submit_button"class="ersten search_button">
+          <%= text_field_tag :query,params[:query], class: "fom-control ersten", placeholder: "Location"%>
+            <%= text_field_tag :query,params[:query], class: "fom-control ersten", placeholder: "Car brand"%><input type="submit" id="search_submit_button"class="ersten search_button">
           <% end %>
         </div>
       </div>
   </div>
 </div>
+<div class="homepage_insurance_and_reason_divs">
+  <div class="beneath_banner_flexbox">
+   <div class="beneath_banner_flex">
+    <div class="text_beneath_banner">
+      <h3><b>AMAX Insurance</b></h3>
+      <p>To make sure your car will be taken care of</p>
+      <img src="" alt="">
+    </div>
+   </div>
+  </div>
+  <div class="beneath_banner_flexbox">
+   <div class="beneath_banner_flex">
+    <div class="text_beneath_banner">
+      <h3><b>creating opertunities</b></h3>
+      <p>giving others the opertunity to drive their dream</p>
+      <img src="" alt="">
+    </div>
+   </div>
+  </div>
+</div>
+<div class="homepage_bottom_grid">
+  <div class="homepage_left_item">
+    <h1 class="classic_font" style="text-align: center;"><b>Becoming a rolemodel</b></h1>
+    <h3 class="classic_font"><b>rent your car</b></h3>
+    <p class="classic_font" style="text-align: center;">Imaging others would enable you to have a ride in your <b>dream car</b>. <br> sign up now</p>
+    <%= link_to 'Offer a car', new_car_path, class: "navbar-wagon-item navbar-wagon-link classic_font homepage_offer_button" %>
 
-
+  </div>
+  <div class="homepage_right_item">
+    <div>
+      <img class="homepage_grid_image"src="https://images.unsplash.com/photo-1508916615381-bf54b73c1382?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3214a8580e059ee562c787a971cb52ac&auto=format&fit=crop&w=1650&q=80" alt="">
+    </div>
+  </div>
+</div>
 
 
 

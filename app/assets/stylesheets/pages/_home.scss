@@ -134,8 +134,52 @@
   border: 3px solid white;
 }
 
+.homepage_insurance_and_reason_divs{
+  display: flex;
+  justify-content: space-around;
+}
+
+.homepage_bottom_grid{
+  display: grid;
+  grid-template-columns: 543px 700px;
+  grid-template-rows: 200px 200px;
+  margin-top: 50px;
+  margin-left: 22px;
+  border: 1px solid black;
+  margin-right: 20px;
 
 
+}
+
+.homepage_left_item{
+  height: 400px;
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  margin-top: 72px;
+
+}
+
+.homepage_right_item{
+  height: 400px;
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+}
+
+.homepage_grid_image{
+ object-fit: cover;
+  height: 325px;
+  width: 572px;
+  margin-left: 107px;
+  margin-top: 39px;
+}
+
+.homepage_offer_button{
+  text-align: center;
+  text-align: center;
+  margin-left: 210px;
+  margin-top: 30px;
+  font-size: 20px;
+}
 
 
 
