@@ -10,7 +10,9 @@
    <div class="outer_grid_container">
      <div class="grid_container">
        <div class="main_container">
-          <div class="container_left">
+          <div class="container_left"
+               style="background-image: linear-gradient(-150deg, rgba(0,101,168,0.6) 0%, rgba(0,0,0,0) 1%), url('<%= cl_image_path(@car.photo_url) if @car.photo_url.present? %>')"
+          >
           </div>
             <div class="container_right_top1 classic_font">
               <h4><strong><%= @car.brand %></strong></h4>

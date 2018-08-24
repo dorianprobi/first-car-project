@@ -9,7 +9,10 @@
    <div class="outer_box">
      <div class="flexbox">
        <div class="grid">
-         <div class="image"><p><img class="image" src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=70d09974c4be252b9d20274ef0122ce9&auto=format&fit=crop&w=700&q=60" alt=""></p>
+         <div class="image">
+          <p>
+            <%= cl_image_tag car.photo_url, width: 262 if car.photo_url.present? %>
+          </p>
          </div>
          <div class="information">
            <div class="price_brand">
